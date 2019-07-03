@@ -18,11 +18,11 @@ const STATE_SLOT5_STOP = 6;
 const STATE_STOPPED = 7;
 const STATE_RESULTS = 8;
 const STATE_END = 9;
-
+let GAME_DATA = 'data';
 let USER_BALANCE = 1000;
 
 $(function () {
-    
+
     $.ajax({
         url: "./game-data.json",
         type: 'GET',
@@ -46,12 +46,11 @@ function setGame(data) {
     let lineNum = $('#lineNum').val();
     let betValue = $('#betValue').val();
     let betByLine = $('#betByLine').val();
-    
+
 
 
     game.items = data.items;
-    game.winTemp = data.templates["win-template1"];
-    game.lineResult = data.results.result1;
+
     game.draw();
 
     $('canvas').attr('height', SLOT_HEIGHT * (ITEM_COUNT + 3));
@@ -64,6 +63,9 @@ function setGame(data) {
 
     $('#play').click(function () {
         if ($(this).hasClass("active")) {
+            game.winTemp = data[GAME_DATA]["win-template"];
+            game.lineResult = data[GAME_DATA]["results"]["result"];
+//            console.log(game.lineResult);
             USER_BALANCE = USER_BALANCE - ($('#betValue').val())
             $('#userBalance').val(USER_BALANCE);
             game.userBalance = USER_BALANCE;
@@ -72,6 +74,16 @@ function setGame(data) {
             game.roll();
             $(this).toggleClass('active');
             $('#winningSum').val('');
+
+            if (GAME_DATA == 'data') {
+                GAME_DATA = 'data1';
+            } else if (GAME_DATA == 'data1') {
+                GAME_DATA = 'data2';
+            } else if (GAME_DATA == 'data2') {
+                GAME_DATA = 'data3';
+            } else if (GAME_DATA == 'data3') {
+                GAME_DATA = 'data';
+            }
         }
     });
     $("#lineNum,#betByLine").change(function () {
@@ -133,19 +145,19 @@ class Game {
     setPlayerSettings() {
         let betByLine = $('#betByLine').val();
         let lineNum = $('#lineNum').val();
-        let betValue = betByLine*lineNum;
-        
+        let betValue = betByLine * lineNum;
+
         $('#stars > li span').not(':first').removeClass('active');
         $('#betValue').val(betValue);
-        for(let i=0;i<lineNum;i++){
-            $('#stars > li:nth-child('+(i+1)+') span').addClass('active');
-}
-        
+        for (let i = 0; i < lineNum; i++) {
+            $('#stars > li:nth-child(' + (i + 1) + ') span').addClass('active');
+        }
+
     }
 }
 Game.prototype.drawCanvases = function (images, canvas) {
 
-
+//    console.log(images)
     let ctx = canvas.getContext('2d');
     ctx.fillStyle = '#ddd';
     for (let i = 0; i < images.length; i++) {
@@ -288,7 +300,7 @@ Game.prototype.update = function () {
         return false;
     }
     if (now - that.lastUpdate > SPINTIME) {
-        console.log()
+//        console.log()
         switch (this.state) {
 
             case STATE_SPINNING: // all slots spinning
@@ -377,7 +389,7 @@ Game.prototype.checkWinLines = function ()
     let line_3 = result[0];
     let winArr = [];
     let multiplicator = 0;
-    console.log(result)
+//    console.log(result)
 //    set arrays for first 3 lines
     for (let i = 0; i < result.length; i++) {
         if (winLine > i) {
@@ -387,7 +399,7 @@ Game.prototype.checkWinLines = function ()
 
     }
 
-    console.log(line_1);
+//    console.log(line_1);
     //    set arrays for all lines based on position first 3 rows 
     if (winLine > 3) {
         let line_4 = [];
@@ -481,8 +493,8 @@ Game.prototype.checkWinLines = function ()
     }
 
     let winResult = {};
-    console.log('OVO!!!!');
-    console.log(winArr);
+//    console.log('OVO!!!!');
+//    console.log(winArr);
     for (let i = 0; i < winArr.length; i++) {
 
         for (let y = 0; y < winArr[i].length; y++) {
@@ -519,8 +531,8 @@ Game.prototype.checkWinLines = function ()
     let winSum = 0;
     let lines = this.lineNum;
     let items = this.items;
-    console.log(this)
-    console.log(winResult)
+//    console.log(this)
+//    console.log(winResult)
     for (let i = 1; i <= lines; i++) {
         if (winResult['winline_' + i]) {
 
@@ -529,9 +541,7 @@ Game.prototype.checkWinLines = function ()
                 let sign = Object.keys(temp);
                 let num = Object.values(temp);
                 let objSign = items.find(obj => obj.id == sign);
-                console.log(temp)
-                console.log(sign + ' ' + num);
-                console.log(objSign)
+
                 //calculate win amount and create win object
                 if (objSign.hasOwnProperty(num)) {
                     let win;
@@ -613,7 +623,8 @@ Game.prototype.checkWinLines = function ()
     }
     let betByLine = parseInt(this.betValue / lines);
     let currBalance = this.userBalance;
-    let newBalance = currBalance + winSum + multiplicator * betByLine;
+    let newBalance = parseFloat(currBalance) + parseFloat(winSum) + (multiplicator * betByLine);
+//    console.log(newBalance+' * '+currBalance+'**'+winSum);
     this.userBalance = parseFloat(newBalance).toFixed(1);
     this.winSum = parseFloat(winSum + multiplicator * betByLine).toFixed(1);
     this.winLines = winnings;
