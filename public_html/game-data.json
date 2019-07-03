@@ -1,134 +1,610 @@
 { 
-    "items":[
-    {"path": "reel-icon-1", "id": "reel1", "2": 10, "3": 200, "4": 2000, "5": 10000, "jocker": true},
-    {"path": "reel-icon-2", "id": "reel2", "2": 2, "3": 25, "4": 100, "5": 750},
-    {"path": "reel-icon-3", "id": "reel3", "2": 2, "3": 25, "4": 100, "5": 750},
-    {"path": "reel-icon-4", "id": "reel4", "2": 2, "3": 5, "4": 25, "5": 100},
-    {"path": "reel-icon-5", "id": "reel5", "3": 15, "4": 100, "5": 400},
-    {"path": "reel-icon-6", "id": "reel6", "3": 10, "4": 75, "5": 250},
-    {"path": "reel-icon-7", "id": "reel7", "3": 10, "4": 50, "5": 250},
-    {"path": "reel-icon-8", "id": "reel8", "3": 10, "4": 50, "5": 125},
-    {"path": "reel-icon-9", "id": "reel9", "3": 5, "4": 50, "5": 100},
-    {"path": "reel-icon-10", "id": "reel10", "3": 5, "4": 25, "5": 100},
-    {"path": "reel-icon-11", "id": "reel11", "3": 5, "4": 25, "5": 100},
-    {"path": "reel-icon-12", "id": "reel12", "3": 5, "4": 25, "5": 100},
-    {"path": "reel-icon-13", "id": "reel13", "multiplicator": true}
+    "items": [
+        {
+            "path": "reel-icon-1",
+            "id": "reel1",
+            "2": 10,
+            "3": 200,
+            "4": 2000,
+            "5": 10000,
+            "jocker": true
+        },
+        {
+            "path": "reel-icon-2",
+            "id": "reel2",
+            "2": 2,
+            "3": 25,
+            "4": 100,
+            "5": 750
+        },
+        {
+            "path": "reel-icon-3",
+            "id": "reel3",
+            "2": 2,
+            "3": 25,
+            "4": 100,
+            "5": 750
+        },
+        {
+            "path": "reel-icon-4",
+            "id": "reel4",
+            "2": 2,
+            "3": 5,
+            "4": 25,
+            "5": 100
+        },
+        {
+            "path": "reel-icon-5",
+            "id": "reel5",
+            "3": 15,
+            "4": 100,
+            "5": 400
+        },
+        {
+            "path": "reel-icon-6",
+            "id": "reel6",
+            "3": 10,
+            "4": 75,
+            "5": 250
+        },
+        {
+            "path": "reel-icon-7",
+            "id": "reel7",
+            "3": 10,
+            "4": 50,
+            "5": 250
+        },
+        {
+            "path": "reel-icon-8",
+            "id": "reel8",
+            "3": 10,
+            "4": 50,
+            "5": 125
+        },
+        {
+            "path": "reel-icon-9",
+            "id": "reel9",
+            "3": 5,
+            "4": 50,
+            "5": 100
+        },
+        {
+            "path": "reel-icon-10",
+            "id": "reel10",
+            "3": 5,
+            "4": 25,
+            "5": 100
+        },
+        {
+            "path": "reel-icon-11",
+            "id": "reel11",
+            "3": 5,
+            "4": 25,
+            "5": 100
+        },
+        {
+            "path": "reel-icon-12",
+            "id": "reel12",
+            "3": 5,
+            "4": 25,
+            "5": 100
+        },
+        {
+            "path": "reel-icon-13",
+            "id": "reel13",
+            "multiplicator": true
+        }
     ],
-    "templates":{
-    "win-template1":{
-     "item1": [
-            {"path": "reel-icon-7", "id": "reel7", "3": 10, "4": 50, "5": 250},
-            {"path": "reel-icon-13", "id": "reel13", "multiplicator": true},
-            {"path": "reel-icon-9", "id": "reel9", "3": 5, "4": 50, "5": 100}
-        ],
-         "item2": [
-           {"path": "reel-icon-12", "id": "reel12", "3": 5, "4": 25, "5": 100},
-            {"path": "reel-icon-8", "id": "reel8", "3": 10, "4": 50, "5": 125},
-            {"path": "reel-icon-9", "id": "reel9", "3": 5, "4": 50, "5": 100}
-        ],
-        "item3": [
-          {"path": "reel-icon-4", "id": "reel4", "2": 2, "3": 5, "4": 25, "5": 100},
-            {"path": "reel-icon-7", "id": "reel7", "3": 10, "4": 50, "5": 250},
-             {"path": "reel-icon-9", "id": "reel9", "3": 5, "4": 50, "5": 100}
-        ],
-         "item4": [
-          {"path": "reel-icon-5", "id": "reel5", "3": 15, "4": 100, "5": 400},
-    {"path": "reel-icon-6", "id": "reel6", "3": 10, "4": 75, "5": 250},
-             {"path": "reel-icon-11", "id": "reel11", "3": 5, "4": 25, "5": 100}
-        ],
-         "item5": [
-          {"path": "reel-icon-2", "id": "reel2", "2": 2, "3": 25, "4": 100, "5": 750},
-    {"path": "reel-icon-3", "id": "reel3", "2": 2, "3": 25, "4": 100, "5": 750},
-              {"path": "reel-icon-11", "id": "reel11", "3": 5, "4": 25, "5": 100}
-        ]
-    },
-    "win-template2":{
-     "item1": [
-            {"path": "reel-icon-7", "id": "reel7", "3": 10, "4": 50, "5": 250},
-            {"path": "reel-icon-13", "id": "reel13", "multiplicator": true},
-            {"path": "reel-icon-9", "id": "reel9", "3": 5, "4": 50, "5": 100}
-        ],
-         "item2": [
-           {"path": "reel-icon-12", "id": "reel12", "3": 5, "4": 25, "5": 100},
-            {"path": "reel-icon-8", "id": "reel8", "3": 10, "4": 50, "5": 125},
-            {"path": "reel-icon-9", "id": "reel9", "3": 5, "4": 50, "5": 100}
-        ],
-        "item3": [
-          {"path": "reel-icon-4", "id": "reel4", "2": 2, "3": 5, "4": 25, "5": 100},
-            {"path": "reel-icon-7", "id": "reel7", "3": 10, "4": 50, "5": 250},
-             {"path": "reel-icon-2", "id": "reel2", "2": 2, "3": 25, "4": 100, "5": 750}
-        ],
-         "item4": [
-          {"path": "reel-icon-5", "id": "reel5", "3": 15, "4": 100, "5": 400},
-    {"path": "reel-icon-6", "id": "reel6", "3": 10, "4": 75, "5": 250},
-             {"path": "reel-icon-11", "id": "reel11", "3": 5, "4": 25, "5": 100}
-        ],
-         "item5": [
-          {"path": "reel-icon-2", "id": "reel2", "2": 2, "3": 25, "4": 100, "5": 750},
-    {"path": "reel-icon-3", "id": "reel3", "2": 2, "3": 25, "4": 100, "5": 750},
-              {"path": "reel-icon-11", "id": "reel11", "3": 5, "4": 25, "5": 100}
-        ]
-    },"win-template3":{
-     "item1": [
-            {"path": "reel-icon-7", "id": "reel7", "3": 10, "4": 50, "5": 250},
-            {"path": "reel-icon-13", "id": "reel13", "multiplicator": true},
-            {"path": "reel-icon-9", "id": "reel9", "3": 5, "4": 50, "5": 100}
-        ],
-         "item2": [
-           {"path": "reel-icon-12", "id": "reel12", "3": 5, "4": 25, "5": 100},
-            {"path": "reel-icon-8", "id": "reel8", "3": 10, "4": 50, "5": 125},
-            {"path": "reel-icon-9", "id": "reel9", "3": 5, "4": 50, "5": 100}
-        ],
-        "item3": [
-          {"path": "reel-icon-4", "id": "reel4", "2": 2, "3": 5, "4": 25, "5": 100},
-            {"path": "reel-icon-7", "id": "reel7", "3": 10, "4": 50, "5": 250},
-             {"path": "reel-icon-2", "id": "reel2", "2": 2, "3": 25, "4": 100, "5": 750}
-        ],
-         "item4": [
-          {"path": "reel-icon-5", "id": "reel5", "3": 15, "4": 100, "5": 400},
-    {"path": "reel-icon-6", "id": "reel6", "3": 10, "4": 75, "5": 250},
-             {"path": "reel-icon-11", "id": "reel11", "3": 5, "4": 25, "5": 100}
-        ],
-         "item5": [
-          {"path": "reel-icon-2", "id": "reel2", "2": 2, "3": 25, "4": 100, "5": 750},
-    {"path": "reel-icon-3", "id": "reel3", "2": 2, "3": 25, "4": 100, "5": 750},
-              {"path": "reel-icon-11", "id": "reel11", "3": 5, "4": 25, "5": 100}
-        ]
-    },"win-template4":{
-     "item1": [
-            {"path": "reel-icon-7", "id": "reel7", "3": 10, "4": 50, "5": 250},
-            {"path": "reel-icon-13", "id": "reel13", "multiplicator": true},
-            {"path": "reel-icon-9", "id": "reel9", "3": 5, "4": 50, "5": 100}
-        ],
-         "item2": [
-           {"path": "reel-icon-12", "id": "reel12", "3": 5, "4": 25, "5": 100},
-            {"path": "reel-icon-8", "id": "reel8", "3": 10, "4": 50, "5": 125},
-            {"path": "reel-icon-9", "id": "reel9", "3": 5, "4": 50, "5": 100}
-        ],
-        "item3": [
-          {"path": "reel-icon-4", "id": "reel4", "2": 2, "3": 5, "4": 25, "5": 100},
-            {"path": "reel-icon-7", "id": "reel7", "3": 10, "4": 50, "5": 250},
-             {"path": "reel-icon-2", "id": "reel2", "2": 2, "3": 25, "4": 100, "5": 750}
-        ],
-         "item4": [
-          {"path": "reel-icon-5", "id": "reel5", "3": 15, "4": 100, "5": 400},
-    {"path": "reel-icon-6", "id": "reel6", "3": 10, "4": 75, "5": 250},
-             {"path": "reel-icon-11", "id": "reel11", "3": 5, "4": 25, "5": 100}
-        ],
-         "item5": [
-          {"path": "reel-icon-2", "id": "reel2", "2": 2, "3": 25, "4": 100, "5": 750},
-    {"path": "reel-icon-3", "id": "reel3", "2": 2, "3": 25, "4": 100, "5": 750},
-              {"path": "reel-icon-11", "id": "reel11", "3": 5, "4": 25, "5": 100}
-        ]
-    }
-},
-"results":{
-    "result1":[
-        ["reel7","reel12","reel4","reel5","reel2"],
-        ["reel13","reel8","reel7","reel6","reel3"],
-        ["reel9","reel9","reel9","reel11","reel11"]
-    ]
-        
-    }
+    "data": {
+        "win-template": {
+            "item1": [
+                {
+                    "path": "reel-icon-7",
+                    "id": "reel7",
+                    "3": 10,
+                    "4": 50,
+                    "5": 250
+                },
+                {
+                    "path": "reel-icon-13",
+                    "id": "reel13",
+                    "multiplicator": true
+                },
+                {
+                    "path": "reel-icon-9",
+                    "id": "reel9",
+                    "3": 5,
+                    "4": 50,
+                    "5": 100
+                }
+            ],
+            "item2": [
+                {
+                    "path": "reel-icon-12",
+                    "id": "reel12",
+                    "3": 5,
+                    "4": 25,
+                    "5": 100
+                },
+                {
+                    "path": "reel-icon-8",
+                    "id": "reel8",
+                    "3": 10,
+                    "4": 50,
+                    "5": 125
+                },
+                {
+                    "path": "reel-icon-9",
+                    "id": "reel9",
+                    "3": 5,
+                    "4": 50,
+                    "5": 100
+                }
+            ],
+            "item3": [
+                {
+                    "path": "reel-icon-4",
+                    "id": "reel4",
+                    "2": 2,
+                    "3": 5,
+                    "4": 25,
+                    "5": 100
+                },
+                {
+                    "path": "reel-icon-7",
+                    "id": "reel7",
+                    "3": 10,
+                    "4": 50,
+                    "5": 250
+                },
+                {
+                    "path": "reel-icon-9",
+                    "id": "reel9",
+                    "3": 5,
+                    "4": 50,
+                    "5": 100
+                }
+            ],
+            "item4": [
+                {
+                    "path": "reel-icon-5",
+                    "id": "reel5",
+                    "3": 15,
+                    "4": 100,
+                    "5": 400
+                },
+                {
+                    "path": "reel-icon-6",
+                    "id": "reel6",
+                    "3": 10,
+                    "4": 75,
+                    "5": 250
+                },
+                {
+                    "path": "reel-icon-11",
+                    "id": "reel11",
+                    "3": 5,
+                    "4": 25,
+                    "5": 100
+                }
+            ],
+            "item5": [
+                {
+                    "path": "reel-icon-2",
+                    "id": "reel2",
+                    "2": 2,
+                    "3": 25,
+                    "4": 100,
+                    "5": 750
+                },
+                {
+                    "path": "reel-icon-3",
+                    "id": "reel3",
+                    "2": 2,
+                    "3": 25,
+                    "4": 100,
+                    "5": 750
+                },
+                {
+                    "path": "reel-icon-11",
+                    "id": "reel11",
+                    "3": 5,
+                    "4": 25,
+                    "5": 100
+                }
+            ]
+        },
 
+        "results": {
+            "result": [
+                ["reel7", "reel12", "reel4", "reel5", "reel2"],
+                ["reel13", "reel8", "reel7", "reel6", "reel3"],
+                ["reel9", "reel9", "reel9", "reel11", "reel11"]
+            ]
+        }
+    },
+    "data1": {
+        "win-template": {
+            "item1": [
+                {
+                    "path": "reel-icon-5",
+                    "id": "reel5",
+                    "3": 15,
+                    "4": 100,
+                    "5": 400
+                },
+                {
+                    "path": "reel-icon-13",
+                    "id": "reel13",
+                    "multiplicator": true
+                },
+                {
+                    "path": "reel-icon-9",
+                    "id": "reel9",
+                    "3": 5,
+                    "4": 50,
+                    "5": 100
+                }
+            ],
+            "item2": [
+                {
+                    "path": "reel-icon-9",
+                    "id": "reel9",
+                    "3": 5,
+                    "4": 50,
+                    "5": 100
+                },
+                {
+                    "path": "reel-icon-8",
+                    "id": "reel8",
+                    "3": 10,
+                    "4": 50,
+                    "5": 125
+                },
+                {
+                    "path": "reel-icon-2",
+                    "id": "reel2",
+                    "2": 2,
+                    "3": 25,
+                    "4": 100,
+                    "5": 750
+                }
+            ],
+            "item3": [
+                {
+                    "path": "reel-icon-7",
+                    "id": "reel7",
+                    "3": 10,
+                    "4": 50,
+                    "5": 250
+                },
+                {
+                    "path": "reel-icon-7",
+                    "id": "reel7",
+                    "3": 10,
+                    "4": 50,
+                    "5": 250
+                },
+                {
+                    "path": "reel-icon-3",
+                    "id": "reel3",
+                    "2": 2,
+                    "3": 25,
+                    "4": 100,
+                    "5": 750
+                }
+            ],
+            "item4": [
+                {
+                    "path": "reel-icon-5",
+                    "id": "reel5",
+                    "3": 15,
+                    "4": 100,
+                    "5": 400
+                },
+                {
+                    "path": "reel-icon-8",
+                    "id": "reel8",
+                    "3": 10,
+                    "4": 50,
+                    "5": 125
+                },
+                {
+                    "path": "reel-icon-11",
+                    "id": "reel11",
+                    "3": 5,
+                    "4": 25,
+                    "5": 100
+                }
+            ],
+            "item5": [
+                {
+                    "path": "reel-icon-8",
+                    "id": "reel8",
+                    "3": 10,
+                    "4": 50,
+                    "5": 125
+                },
+                {
+                    "path": "reel-icon-3",
+                    "id": "reel3",
+                    "2": 2,
+                    "3": 25,
+                    "4": 100,
+                    "5": 750
+                },
+                {
+                    "path": "reel-icon-11",
+                    "id": "reel11",
+                    "3": 5,
+                    "4": 25,
+                    "5": 100
+                }
+            ]
+        },
+
+        "results": {
+            "result": [
+                ["reel5", "reel19", "reel7", "reel5", "reel8"],
+                ["reel13", "reel8", "reel7", "reel8", "reel3"],
+                ["reel9", "reel2", "reel3", "reel11", "reel11"]
+            ]
+        }
+    },
+    "data2": {
+        "win-template": {
+            "item1": [
+                {
+                    "path": "reel-icon-11",
+                    "id": "reel11",
+                    "3": 5,
+                    "4": 25,
+                    "5": 100
+                },
+                {
+                    "path": "reel-icon-10",
+                    "id": "reel10",
+                    "3": 5,
+                    "4": 25,
+                    "5": 100
+                },
+                {
+                    "path": "reel-icon-6",
+                    "id": "reel6",
+                    "3": 10,
+                    "4": 75,
+                    "5": 250
+                }
+            ],
+            "item2": [
+                {
+                    "path": "reel-icon-12",
+                    "id": "reel12",
+                    "3": 5,
+                    "4": 25,
+                    "5": 100
+                },
+                {
+                    "path": "reel-icon-11",
+                    "id": "reel11",
+                    "3": 5,
+                    "4": 25,
+                    "5": 100
+                },
+                {
+                    "path": "reel-icon-6",
+                    "id": "reel6",
+                    "3": 10,
+                    "4": 75,
+                    "5": 250
+                }
+            ],
+            "item3": [
+                {
+                    "path": "reel-icon-5",
+                    "id": "reel5",
+                    "3": 15,
+                    "4": 100,
+                    "5": 400
+                },
+                {
+                    "path": "reel-icon-11",
+                    "id": "reel11",
+                    "3": 5,
+                    "4": 25,
+                    "5": 100
+                },
+                {
+                    "path": "reel-icon-9",
+                    "id": "reel9",
+                    "3": 5,
+                    "4": 50,
+                    "5": 100
+                }
+            ],
+            "item4": [
+                {
+                    "path": "reel-icon-5",
+                    "id": "reel5",
+                    "3": 15,
+                    "4": 100,
+                    "5": 400
+                },
+                {
+                    "path": "reel-icon-13",
+                    "id": "reel13",
+                    "multiplicator": true
+                },
+                {
+                    "path": "reel-icon-11",
+                    "id": "reel11",
+                    "3": 5,
+                    "4": 25,
+                    "5": 100
+                }
+            ],
+            "item5": [
+                {
+                    "path": "reel-icon-5",
+                    "id": "reel5",
+                    "3": 15,
+                    "4": 100,
+                    "5": 400
+                },
+                {
+                    "path": "reel-icon-3",
+                    "id": "reel3",
+                    "2": 2,
+                    "3": 25,
+                    "4": 100,
+                    "5": 750
+                },
+                {
+                    "path": "reel-icon-11",
+                    "id": "reel11",
+                    "3": 5,
+                    "4": 25,
+                    "5": 100
+                }
+            ]
+        },
+
+        "results": {
+            "result": [
+                ["reel11", "reel12", "reel5", "reel5", "reel5"],
+                ["reel10", "reel11", "reel11", "reel13", "reel3"],
+                ["reel6", "reel6", "reel9", "reel11", "reel11"]
+            ]
+        }
+    },
+    "data3": {
+        "win-template": {
+            "item1": [
+                {
+                    "path": "reel-icon-5",
+                    "id": "reel5",
+                    "3": 15,
+                    "4": 100,
+                    "5": 400
+                },
+                {
+                    "path": "reel-icon-13",
+                    "id": "reel13",
+                    "multiplicator": true
+                },
+                {
+                    "path": "reel-icon-9",
+                    "id": "reel9",
+                    "3": 5,
+                    "4": 50,
+                    "5": 100
+                }
+            ],
+            "item2": [
+                {
+                    "path": "reel-icon-12",
+                    "id": "reel12",
+                    "3": 5,
+                    "4": 25,
+                    "5": 100
+                },
+                {
+                    "path": "reel-icon-5",
+                    "id": "reel5",
+                    "3": 15,
+                    "4": 100,
+                    "5": 400
+                },
+                {
+                    "path": "reel-icon-3",
+                    "id": "reel3",
+                    "2": 2,
+                    "3": 25,
+                    "4": 100,
+                    "5": 750
+                }
+            ],
+            "item3": [
+                {
+                    "path": "reel-icon-7",
+                    "id": "reel7",
+                    "3": 10,
+                    "4": 50,
+                    "5": 250
+                },
+                {
+                    "path": "reel-icon-5",
+                    "id": "reel5",
+                    "3": 15,
+                    "4": 100,
+                    "5": 400
+                },
+                {
+                    "path": "reel-icon-9",
+                    "id": "reel9",
+                    "3": 5,
+                    "4": 50,
+                    "5": 100
+                }
+            ],
+            "item4": [
+                {
+                    "path": "reel-icon-9",
+                    "id": "reel9",
+                    "3": 5,
+                    "4": 50,
+                    "5": 100
+                },
+                {
+                    "path": "reel-icon-5",
+                    "id": "reel5",
+                    "3": 15,
+                    "4": 100,
+                    "5": 400
+                },
+                {
+                    "path": "reel-icon-1",
+                    "id": "reel1",
+                    "2": 10,
+                    "3": 200,
+                    "4": 2000,
+                    "5": 10000,
+                    "jocker": true
+                }
+            ],
+            "item5": [
+                {
+                    "path": "reel-icon-2",
+                    "id": "reel2",
+                    "2": 2,
+                    "3": 25,
+                    "4": 100,
+                    "5": 750
+                },
+                {
+                    "path": "reel-icon-3",
+                    "id": "reel3",
+                    "2": 2,
+                    "3": 25,
+                    "4": 100,
+                    "5": 750
+                },
+                {
+                    "path": "reel-icon-11",
+                    "id": "reel11",
+                    "3": 5,
+                    "4": 25,
+                    "5": 100
+                }
+            ]
+        },
+
+        "results": {
+            "result": [
+                ["reel5", "reel12", "reel7", "reel9", "reel2"],
+                ["reel13", "reel5", "reel5", "reel5", "reel3"],
+                ["reel9", "reel3", "reel9", "reel1", "reel11"]
+            ]
+        }
+    }
 }
