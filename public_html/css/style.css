@@ -1,0 +1,91 @@
+body{
+    background-color: rgb(0, 0, 18);
+
+}
+h1{
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/*reels style*/ 
+#reels
+{
+    display:block;
+    position:relative;
+    height: 251px;
+    overflow: hidden;
+    text-align: center;
+    background-image: url('../img/background.png');
+    border: 10px solid;
+    border-color: #777 #999 #666 #999;
+    border-radius:3px;
+    -moz-box-shadow:#fff 0px 1px 0px;
+}
+#reels canvas
+{
+    width: 87px;
+    height: 300px;
+    position: relative;
+    background: #02041b;
+    border: 2px solid gold;
+}
+
+#winline{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#reels #winCanvas{
+    height: 232px;
+    width: 450px;
+    display: block;
+    margin: 0 auto;
+    background: transparent;
+    border: none;
+}
+/*////////////////////////////////*/
+#playerSettings{
+    background-image: url('../img/background.png');
+    padding: 15px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+}
+#play{
+    font-weight: bold;
+    background: grey;
+    border-radius: 3px;
+    padding: 5px 25px;
+    letter-spacing: 5px;
+    margin-top: 20px;
+}
+#play.active{
+    background: #f1c239;
+}
+input{
+    background-color: #353a4e;
+    border: transparent;
+    padding: 2px 5px;
+    text-align: center;
+    font-weight: 600;
+    color: #36568e;
+    font-size: 18px;
+    width: 200px;
+}
+.form-group{
+    display: inline-block;
+}
+
+#stars .line{
+    float: left;
+    font-size: 18px;
+    font-weight: bolder;
+}
+#stars .line.active{
+    color: yellow;
+}
